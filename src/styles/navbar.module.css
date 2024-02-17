@@ -1,0 +1,12 @@
+.wrapper input:checked ~ label .hamburger {
+    display: none;
+  }
+  
+  .wrapper input:not(:checked) ~ label .crossHair {
+    display: none;
+  }
+  
+  .wrapper input:checked ~ nav {
+    display: block;
+  }
+  

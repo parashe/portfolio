@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-gradient-animation {
+    animation: gradientAnimation 5s ease infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* .homebackground{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    
+    
+    
+  } */
+
+.homebackground {
+    /* background: #f9fafb; */
+    /* border-radius:  30% 70% 70% 30% / 50% 50% 70% 70%  */
+    /* border-radius: 0% 0% 50% 50% / 5% 5% 50% 50%; */
+    border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+}
+
+.navbar {
+    border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+
+}
+
+.image-home {
+    border-radius: 30% 50% 30% 40% / 50% 30% 30% 40%;
+    border-width: 10px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #7E2553, #FAEF5D, #1D2B53) 1;
+    /* box-shadow: 10px 10px 20px 2px #FAEF5D; */
+    cursor: pointer;
+    ;
+
+}
+
+.image-home:hover {
+    box-shadow: 10px 10px 20px 2px #FAEF5D;
+}
+
+
+
+.heading-text {
+
+    /* Ensure the element can be positioned */
+    position: relative;
+    overflow: hidden;
+    /* Prevent line breaks */
+
+    /* Animation */
+    animation: slideIn 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards, scaleUp 1s ease-in-out forwards;
+    /* Adjust the duration and timing function */
+}
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        /* Start position: outside of viewport */
+    }
+
+    100% {
+        transform: translateX(0);
+        /* End position: original position */
+    }
+}
+
+
+.subheading-text {
+
+    /* Ensure the element can be positioned */
+    position: relative;
+    overflow: hidden;
+    /* Prevent line breaks */
+    opacity: 0;
+    /* Animation */
+    /* Animation */
+    animation: slideIn 3s cubic-bezier(0.25, 0.1, 0.25, 1) 2.6s forwards, scaleUp 1s ease-in-out forwards;
+    /* Adjust the duration and timing function */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+        /* Start position: outside of viewport with opacity */
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        /* End position: original position with full opacity */
+    }
+}
+
+.image-content {
+    position: relative;
+    /* Ensure the element can be positioned */
+    overflow: hidden;
+    /* Hide overflowing content */
+    white-space: nowrap;
+    /* Prevent line breaks */
+
+    /* Animation */
+    animation: slideInLeft 3s forwards;
+    /* Adjust the duration and timing function */
+}
+
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        /* Start position: outside of viewport */
+    }
+
+    100% {
+        transform: translateX(0);
+        /* End position: original position */
+    }
+}
+
+
+
+.about-text {
+    /* Ensure the element can be positioned */
+    position: relative;
+    overflow: hidden;
+    /* Prevent line breaks */
+    opacity: 0;
+    /* Animation */
+    animation: slideIn 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards, scaleUp 1s ease-in-out forwards;
+    /* Initial state */
+    transform: translateX(100%);
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+      /* Start position: outside of viewport with opacity */
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+      /* End position: original position with full opacity */
+    }
+  }
