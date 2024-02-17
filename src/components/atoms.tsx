@@ -2,9 +2,7 @@ import { useAnimation, useInView, motion } from "framer-motion";
 import React, {
   useState,
   useEffect,
-  ReactNode,
-  ReactElement,
-  cloneElement,
+ 
 } from "react";
 
 export const UnderlinedText: React.FC<React.PropsWithChildren> = ({
@@ -72,52 +70,3 @@ export const Reveal: React.FC<React.PropsWithChildren> = ({ children }) => {
   );
 };
 
-interface ScrollAnimationProps {
-  children: ReactNode;
-}
-
-export const ScrollAnimation: React.FC<ScrollAnimationProps> = ({
-  children,
-}) => {
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const fullHeight = document.body.clientHeight;
-
-      // Calculate the adjusted scroll progress based on the content height
-      const adjustedScrollProgress =
-        scrollPosition / (fullHeight - windowHeight);
-
-      // Clamp the scroll progress to a range between 0 and 1
-      const clampedScrollProgress = Math.min(
-        Math.max(adjustedScrollProgress, 0),
-        1
-      );
-
-      // Set isVisible to true when scroll progress is greater than 0.5
-      setIsVisible(clampedScrollProgress > 0.5);
-      setScrollProgress(clampedScrollProgress);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  return (
-    <motion.div>
-      {React.Children.map(children, (child) => {
-        if (React.isValidElement(child)) {
-          return cloneElement(child, {
-            scrollProgress,
-            isVisible,
-          });
-        }
-        return child;
-      })}
-    </motion.div>
-  );
-};
