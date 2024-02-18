@@ -1,73 +1,97 @@
+import React, { useState } from "react";
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+import { Resume } from "../Resume/resume";
+// Assuming the Resume modal component is imported from a separate file
 
 const Footer = () => {
-  const companyLogo = "https://flowbite.com/docs/images/logo.svg";
+  const personLogo = "/parash.png";
   const links = [
-    { url: "#", text: "About" },
-    { url: "#", text: "Privacy Policy" },
-    { url: "#", text: "Licensing" },
-    { url: "#", text: "Contact" },
+    { url: "#", text: "Home" },
+    { url: "#about", text: "About" },
+    { url: "#skills", text: "Skills" },
+    { url: "#projects", text: "Projects" },
+    { url: "#", text: "Download CV" }, // Change the URL to "#" to prevent page reload
   ];
   const year = 2023;
 
+  // State to manage the visibility of the Resume modal
+  const [showResumeModal, setShowResumeModal] = useState(false);
+
+  // Function to toggle the visibility of the Resume modal
+  const toggleResumeModal = () => {
+    setShowResumeModal(!showResumeModal);
+  };
+
   return (
-    <div className="footer ">
-      {/* Your main content here */}
+    <>
+      {/* Footer content */}
       <FooterComponent
         companyName="Parash.dev"
-        companyLogo={companyLogo}
+        personLogo={personLogo}
         links={links}
         year={year}
+        onDownloadResume={toggleResumeModal} // Pass the toggleResumeModal function as a prop
       />
-    </div>
+      {/* Render the Resume modal if showResumeModal state is true */}
+      {showResumeModal && <Resume onClose={toggleResumeModal} />}
+    </>
   );
 };
 
 interface FooterProps {
   companyName: string;
-  companyLogo: string;
+  personLogo: string;
   links: { url: string; text: string }[];
   year: number;
+  onDownloadResume: () => void; // Define prop type for handling download resume action
 }
 
 export const FooterComponent = ({
   companyName,
-  companyLogo,
+  personLogo,
   links,
   year,
+  onDownloadResume,
 }: FooterProps) => {
   return (
-    <footer className="bg-white  rounded-lg shadow dark:bg-gray-900 m-4">
+    <footer className="bg-gray-50 rounded-lg shadow dark:bg-gray-900 md:m-4">
       <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <a
-            href="#"
-            className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+        <div className="sm:flex justify-center sm:items-center sm:justify-center">
+          <Link
+            href="/#"
+            className="flex items-center justify-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
             <Image
-              src={companyLogo}
-              className="h-8"
+              src={personLogo}
+              className="h-full w-full rounded-full object-fit mix-blend-color-burn"
               alt={`${companyName} Logo`}
-              width={32}
-              height={32}
+              width={500}
+              height={500}
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              {companyName}
-            </span>
-          </a>
-          <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+          </Link>
+          <ul className="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             {links.map((link, index) => (
               <li key={index}>
-                <a href={link.url} className="hover:underline me-4 md:me-6">
-                  {link.text}
-                </a>
+                {/* If the text is "Download CV", call the onDownloadResume function */}
+                {link.text === "Download CV" ? (
+                  <button
+                    onClick={onDownloadResume}
+                    className="hover:underline me-4 md:me-6 focus:outline-none"
+                  >
+                    {link.text}
+                  </button>
+                ) : (
+                  <Link href={link.url} className="hover:underline me-4 md:me-6">
+                    {link.text}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
+        <span className="block text-center text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © {year}{" "}
           <a href="#" className="hover:underline">
             {companyName}

@@ -6,13 +6,14 @@ import {
   HTMLIcon,
   JavaScriptIcon,
   LinkedInICon,
+  MailIcon,
   NodeIcon,
   ReactIcon,
 } from "../svg";
 
 export const Home = () => {
   const picture =
-    "h-[320px] w-[300px]  image-home  brightness-100 shadow-lg  opacity-100   w-[90%] shrink-0  bg-neutral-200 object-cover lg:mx-12 md:w-[300px] md:h-[320px] ";
+    "h-full max-h-[300px] w-[300px]  image-home  brightness-100 shadow-lg  opacity-100   w-[100%] shrink-0  bg-neutral-200 object-cover md:mx-12 md:w-[250px] lg:h-[320px] lg:w-[320px] ";
 
   const paragraph =
     " mt-5 text-xs  leading-relaxed lg:leading-relaxed  text-neutral-500";
@@ -21,10 +22,10 @@ export const Home = () => {
       <div className="bg-tertiary">
         <div className="bg-gradient-animation bg-white homebackground h-screen">
           <div className="container mx-auto  ">
-            <div className="md:py-28 md:px-40 ">
-              <div className="flex items-center flex-col  md:flex-row-reverse justify-center gap-0 ">
+            <div className="py-20 md:py-32 md:px-auto  xl:px-40 ">
+              <div className="flex items-center flex-col   md:flex-row-reverse justify-center gap-0 ">
                 <div className="w-full h-full p-5">
-                  <header className="  text-justify flex flex-col  text-black ">
+                  <header className=" text-center lg:text-justify flex flex-col  text-black ">
                     <h1 className="  heading-text tracking-wide text-4xl font-black leading-relaxed mb-3  md:text-5xl ">
                       Hi, I&apos;m Parash Giri
                     </h1>
@@ -45,18 +46,36 @@ export const Home = () => {
                       ideas a reality. */}
                     </p>
 
-                    <div className=" subheading-text mt-5 md:mt-8 gap-5 flex flex-wrap">
-                      <Github
-                        className="w-8 h-8 cursor-pointer transform hover:scale-110 transition duration-300 ease-in-out"
-                        color="black"
-                      />
-                      <LinkedInICon
-                        className="w-8 h-8 cursor-pointer transform hover:scale-110 transition duration-300 ease-in-out"
-                        color="#0077B5"
-                      />
+                    <div className="subheading-text mt-5 md:mt-8 gap-5 flex flex-wrap">
+                      <a
+                        href="https://github.com/parashe"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github
+                          className="w-6 h-6 cursor-pointer transform hover:scale-110 transition duration-300 ease-in-out"
+                          color="black"
+                        />
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/in/parash-giri-5203a3179/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <LinkedInICon
+                          className="w-6 h-6 cursor-pointer transform hover:scale-110 transition duration-300 ease-in-out"
+                          color="#0077B5"
+                        />
+                      </a>
+                      <a href="mailto:parash.giri11@gmail.com">
+                        <MailIcon
+                          color="#FF5733"
+                          className="w-6 h-6 cursor-pointer transform hover:scale-110 transition duration-300 ease-in-out"
+                        />
+                      </a>
                     </div>
 
-                    <div className=" subheading-text mt-5  md:pt-16 md:mt-10 items-center justify-between">
+                    <div className=" subheading-text mt-5  md:pt-10 md:mt-10 items-center justify-between">
                       <p className="font-bold text-md text-secondary leading-relaxed pb-5">
                         Tech Stack
                       </p>
@@ -108,13 +127,14 @@ export const Home = () => {
                   </header>
                 </div>
 
-                <div className="w-full  image-content  p-4   ">
+                <div className="w-full flex text-center justify-center  image-content  p-4   ">
                   <Image
                     src="/parash.jpg"
                     className={picture}
                     alt="Profile Picture"
-                    width={225}
+                    width={605}
                     height={700}
+                    priority
                   />
                 </div>
               </div>

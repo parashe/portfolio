@@ -18,7 +18,7 @@ export const project = [
     techStack: ["React", "Firebase", "Material-UI"],
   },
   {
-    id: 1,
+    id: 3,
     title: "E-commerce Website",
     image: "/onlineshop.png",
     desc: "An e-commerce website built with React and Node.js, featuring a user-friendly interface and secure payment gateway integration.An e-commerce website built with React and Node.js, featuring a user-friendly interface and secure payment gateway integration. An e-commerce website built with React and Node.js, featuring a user-friendly interface and secure payment gateway integration.",
@@ -27,7 +27,7 @@ export const project = [
     techStack: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
   },
   {
-    id: 2,
+    id: 4,
     title: "Task Management App",
     image: "/amazing.png",
     desc: "An e-commerce website built with React and Node.js, featuring a user-friendly interface and secure payment gateway integration.An e-commerce website built with React and Node.js, featuring a user-friendly interface and secure payment gateway integration. An e-commerce website built with React and Node.js, featuring a user-friendly interface and secure payment gateway integration.",
@@ -36,7 +36,7 @@ export const project = [
     techStack: ["React", "Firebase", "Material-UI"],
   },
   {
-    id: 1,
+    id: 5,
     title: "E-commerce Website",
     image: "/onlineshop.png",
     desc: "An e-commerce website built with React and Node.js, featuring a user-friendly interface and secure payment gateway integration.An e-commerce website built with React and Node.js, featuring a user-friendly interface and secure payment gateway integration. An e-commerce website built with React and Node.js, featuring a user-friendly interface and secure payment gateway integration.",
@@ -45,7 +45,7 @@ export const project = [
     techStack: ["React", "Node.js", "Express", "MongoDB", "Stripe"],
   },
   {
-    id: 2,
+    id: 6,
     title: "Task Management App",
     image: "/amazing.png",
     desc: "An e-commerce website built with React and Node.js, featuring a user-friendly interface and secure payment gateway integration.An e-commerce website built with React and Node.js, featuring a user-friendly interface and secure payment gateway integration. An e-commerce website built with React and Node.js, featuring a user-friendly interface and secure payment gateway integration.",

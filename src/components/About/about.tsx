@@ -15,7 +15,7 @@ export const About = () => {
       const fullHeight = document.body.clientHeight;
 
       // Calculate the adjusted scroll progress based on the content height
-      const adjustedScrollProgress = scrollPosition / (fullHeight / 3);
+      const adjustedScrollProgress = scrollPosition / (fullHeight / 4);
 
       // Clamp the scroll progress to a range between 0 and 1
       const clampedScrollProgress = Math.min(
@@ -40,11 +40,11 @@ export const About = () => {
   const maxImageHeight = 600;
 
   return (
-    <motion.div className="container mx-auto">
-      <section className="p-5 md:px-40 lg:py-10 h-screen flex flex-col items-center justify-center">
+    <motion.div id="about" className="container mx-auto">
+      <section className="p-5 md:px-auto lg:px-40 lg:py-10 h-screen flex flex-col items-center justify-center">
         <motion.div
           className={
-            row + "flex-row-reverse md:flex-row items-center justify-center text-justify"
+            row + "flex-row-reverse md:flex-col xl:flex-row items-center justify-center text-justify"
           }
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: isVisible ? 0 : 100, opacity: isVisible ? 1 : 0 }}
@@ -85,7 +85,7 @@ export const About = () => {
               for iOS and Android platforms. Additionally, I leverage AWS
               services like {""}
               <span className="text-secondary font-semibold ">
-                amplify, ECS, Api gateway, S3, Cognito, and Lambda{" "}
+                amplify, ECS, API gateway, S3, Cognito, and Lambda{" "}
               </span>{" "}
               to enhance application performance and security.
             </p>

@@ -34,10 +34,7 @@
     border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
 }
 
-.navbar {
-    border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
 
-}
 
 .image-home {
     border-radius: 30% 50% 30% 40% / 50% 30% 30% 40%;
@@ -52,6 +49,13 @@
 
 .image-home:hover {
     box-shadow: 10px 10px 20px 2px #FAEF5D;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .image-home {
+        border-radius: 50%;
+    }
 }
 
 
@@ -110,13 +114,8 @@
 }
 
 .image-content {
-    position: relative;
-    /* Ensure the element can be positioned */
-    overflow: hidden;
-    /* Hide overflowing content */
-    white-space: nowrap;
-    /* Prevent line breaks */
 
+    overflow: hidden;
     /* Animation */
     animation: slideInLeft 3s forwards;
     /* Adjust the duration and timing function */
@@ -137,6 +136,7 @@
 
 
 
+
 .about-text {
     /* Ensure the element can be positioned */
     position: relative;
@@ -147,17 +147,34 @@
     animation: slideIn 3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards, scaleUp 1s ease-in-out forwards;
     /* Initial state */
     transform: translateX(100%);
-  }
-  
-  @keyframes slideIn {
+}
+
+@keyframes slideIn {
     0% {
-      transform: translateX(100%);
-      opacity: 0;
-      /* Start position: outside of viewport with opacity */
+        transform: translateX(100%);
+        opacity: 0;
+        /* Start position: outside of viewport with opacity */
     }
+
     100% {
-      transform: translateX(0);
-      opacity: 1;
-      /* End position: original position with full opacity */
+        transform: translateX(0);
+        opacity: 1;
+        /* End position: original position with full opacity */
     }
-  }
+}
+
+.skills {
+    background: url(https://source.unsplash.com/E8Ufcyxz514/2400x1823) center / cover no-repeat fixed;
+
+
+}
+
+.card {
+
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+
+    backdrop-filter: blur(15px);
+}
