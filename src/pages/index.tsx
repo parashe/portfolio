@@ -7,7 +7,8 @@ import { type NextPage } from "next";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Footer from "@/components/Footer/footer";
-import { Skills } from "@/components/skills/skills";
+import Skills from "@/components/skills/skills";
+
 const DashboardPage: NextPage = () => {
   return (
     <>
@@ -16,7 +17,7 @@ const DashboardPage: NextPage = () => {
       <Home />
 
       <About />
-      <Skills/>
+  <Skills/>
       <Project />
       <Footer/>
     </>
