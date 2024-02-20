@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Title } from "../atoms";
 import { skillsData } from "./data";
-import { CrossIcon, FolderIcon } from "../svg";
+import { CrossIcon, FingerIcon, FolderIcon } from "../svg";
 import { motion } from "framer-motion";
 interface Skill {
   id: number;
@@ -27,9 +27,9 @@ const TechStackModal: React.FC<TechStackModalProps> = ({
   onClose,
 }) => {
   return (
-    <div className="fixed  top-0 left-0 flex justify-center items-center w-full h-full bg-black bg-opacity-50 z-50">
+    <div onClick={onClose} className="fixed   top-0 left-0 flex justify-center items-center w-full h-full bg-black bg-opacity-50 z-50">
       {/* </div> <div className="fixed bg-black   w-full h-full inset-0 z-50 flex items-start justify-center overflow-y-auto bg-opacity-50"> */}
-      <div className="modal-content bg-white  max-h-[80vh] p-8 rounded-lg shadow-lg overflow-auto">
+      <div className="modal-content bg-white bg-opacity-90 max-h-[80vh] p-8 rounded-xl shadow-lg overflow-auto">
         <div className="flex justify-end pb-2">
           <button
             className="text-gray-600 hover:text-gray-800"
@@ -42,12 +42,12 @@ const TechStackModal: React.FC<TechStackModalProps> = ({
           Explore My Achievements in {name} Description
         </Title>
 
-        <div className="mb-6">
+        <div className="mb-6  text-white">
           <ul className="list-none">
             {description.map((desc, i) => (
               <li
                 key={i}
-                className="text-sm font-md  py-2 text-gray-700 ml-4 flex items-center max-w-[700px] "
+                className="text-sm font-md  py-2 text-gray-900 ml-4 flex items-center max-w-[700px] "
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -138,19 +138,27 @@ export const Skills: React.FC<SkillsProps> = () => {
                   <h3 className="uppercase text-blue-500 mb-5 text-sm text-center font-black">
                     {skill.title} Tech Stack
                   </h3>
-
-                  <div className="flex items-center mt-6">
-                    <div className="flex flex-wrap justify-center gap-2">
-                      {skill.techStack.map((tech, index) => (
-                        <p
-                          key={index}
-                          className="px-2 cursor-pointer py-1 text-xs text-secondary  bg-gray-200 hover:bg-gray-300 rounded-md"
-                          onClick={() => openModal(tech.name, tech.description)}
-                        >
-                          {tech.name}
-                        </p>
-                      ))}
+                  <div className="w-full h-full flex flex-col items-center justify-center text-center">
+                    <div className="flex items-center mt-6">
+                      <div className="flex flex-wrap justify-center gap-2">
+                        {skill.techStack.map((tech, index) => (
+                          <p
+                            key={index}
+                            className="px-2 cursor-pointer py-1 text-xs text-secondary  bg-gray-200 hover:bg-gray-300 rounded-md"
+                            onClick={() =>
+                              openModal(tech.name, tech.description)
+                            }
+                          >
+                            {tech.name}
+                          </p>
+                        ))}
+                      </div>
                     </div>
+
+                    <p className="ml-5 text-xs animate-bounce mt-5">
+                      <FingerIcon color="#7E2553" className="w-6 h-6" />
+                      Click me{" "}
+                    </p>
                   </div>
                 </div>
               </div>

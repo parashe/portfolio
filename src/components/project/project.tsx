@@ -183,10 +183,10 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
   toggleModal,
 }) => {
   const picture =
-    "aspect-[16/9] w-full rounded-lg object-fit h-full md:h-[200px] max-h-[300px]";
+    "aspect-[16/9] w-full h-full rounded-lg object-cover ";
 
   return (
-    <div className="fixed bg-gray-50 w-full h-full inset-0 z-50 flex items-start justify-center overflow-y-auto">
+    <div className="fixed bg-gray-100 w-full h-full inset-0 z-50 flex items-start justify-center overflow-y-auto">
       {" "}
       {/* Changed items-center to items-start */}
       <motion.div className="container mx-auto pb-32 md:py-12 md:px-20 md:pb-32">
@@ -208,10 +208,10 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 className={picture}
                 src={proj.image}
                 alt={proj.title}
-                width={600}
-                height={400}
+                width={800}
+                height={800}
               />
-              <div className="p-6 w-full text-center">
+              <div className="p-6 ">
                 <h3 className="uppercase text-gray-900 mb-5 text-sm text-center font-black">
                   {proj.title}{" "}
                   {/* Apply text-center class to center-align the project title */}

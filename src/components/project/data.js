@@ -31,7 +31,7 @@ export const project = [
     title: "Rotaract Club Website",
     image: "/rotaract.png",
     githubLink: "https://github.com/parashe/RotractNewWebsiteCode.git",
-    projectLink: "rotaractitabhatta.vercel.app",
+    projectLink: "https://rotaractitabhatta.vercel.app",
     desc: "This website was built 3 years back for the Rotaract Club Website based in Nepal, your gateway to the world of community service and volunteerism! This website is designed to connect members, showcase our projects, and promote our mission of service and leadership development. With a sleek and user-friendly interface built using React, CSS, Material-UI, and Font Awesome, navigating through our site is a breeze.",
     techStack: ["React", "CSS", "Material-UI", "Font Awesome", "Bootstrap"],
   },
@@ -43,7 +43,7 @@ export const project = [
     githubLink: "https://github.com/parashe/DateTimePicker.git",
     projectLink: "https://date-time-picker-blush.vercel.app/",
     desc: "The DateTimepicker component is a React component that allows users to select date and time values using the Material-UI DateTimePicker. This component also includes functionality to handle date and time filtering and displays a loading spinner during searching.",
-    techStack: ["NextJS","Tailwind CSS" ,"TypeScript", "Material-UI", "CSS"],
+    techStack: ["NextJS", "Tailwind CSS", "TypeScript", "Material-UI", "CSS"],
   },
   {
     id: 6,
@@ -52,6 +52,6 @@ export const project = [
     githubLink: "https://github.com/parashe/dropdown-selector.git",
     projectLink: "https://dropdown-selector-orpin.vercel.app/#",
     desc: "This is a  reusable component which is developed using NextJS and tailwind CSS. It includes multiple and single select dropdown.  This was built to show how we can use the mulitple select and single select dropdown. ",
-    techStack: ["NextJS","Tailwind CSS", "TypeScript",  "CSS"],
+    techStack: ["NextJS", "Tailwind CSS", "TypeScript", "CSS"],
   },
 ];
