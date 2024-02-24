@@ -54,7 +54,11 @@ const Project = () => {
           <span className="inline-block ml-1">
             <FolderIcon color="#7E2553" className="w-5 h-5" />
           </span>
-        </h2>
+        </h2>{" "}
+        <span className="text-justify text-red-500 text-xs font-semibold">
+          Note: All projects mentioned here are personal projects. Professional
+          projects are not included.
+        </span>
         <section className="lg:py-10 grid grid-col-2 items-center ">
           {project.slice(0, 2).map((project, index) => (
             <motion.div
@@ -79,9 +83,16 @@ const Project = () => {
                 <Title className="mx-auto lg:mx-0 uppercase text-blue-500 lg:mb-5 text-sm text-justify font-black">
                   {project.title}
                 </Title>
+                {project.username && project.password ? (
+                  <p className="mt-3 text-xs text-justify  leading-relaxed text-neutral-500">
+                    Username: {project.username} <br />
+                    Password: {project.password}
+                  </p>
+                ) : null}
                 <p className="mt-3 text-xs text-justify  leading-relaxed text-neutral-500">
                   {project.desc}
                 </p>
+              
                 <div className="flex items-center mt-6">
                   <p className="font-bold text-xs text-secondary mr-3">
                     Tech Stack
@@ -159,6 +170,8 @@ interface projectProps {
   desc: string;
   githubLink: string;
   projectLink: string;
+  username?: string; // Make username optional if needed
+  password?: string;
   techStack: string[];
 }
 interface projectModalProps {
@@ -174,6 +187,8 @@ interface ProjectModalProps {
     desc: string;
     githubLink: string;
     projectLink: string;
+    username: string; // Make username optional if needed
+    password: string;
     techStack: string[];
   }[];
   toggleModal: () => void;
@@ -219,6 +234,12 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 <p className="text-xs text-neutral-500 mb-4 text-justify">
                   {proj.desc}
                 </p>
+                {proj.username && proj?.password ? (
+                  <p className="mt-3 text-xs text-justify mb-2 leading-relaxed text-blue-500">
+                    Username: {proj?.username} <br />
+                    Password: {proj?.password}
+                  </p>
+                ) : null}
                 <div className="flex flex-wrap gap-2 justify-center">
                   {proj.techStack.map((tech, index) => (
                     <p
