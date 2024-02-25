@@ -55,7 +55,7 @@ const Project = () => {
             <FolderIcon color="#7E2553" className="w-5 h-5" />
           </span>
         </h2>{" "}
-        <span className="text-justify text-red-500 text-xs font-semibold">
+        <span className=" text-center md:text-justify text-red-500 text-xs font-semibold">
           Note: All projects mentioned here are personal projects. Professional
           projects are not included.
         </span>
@@ -198,7 +198,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
   toggleModal,
 }) => {
   const picture =
-    "aspect-[16/9] w-full h-full rounded-lg object-fit md:h-[200px] max-h-[300px]";
+    "aspect-[16/9] w-full h-full object-contain rounded-lg object-fit md:h-[200px] max-h-[300px]";
 
   return (
     <div className="fixed bg-gray-100 w-full h-full inset-0 z-50 flex items-start justify-center overflow-y-auto">
@@ -223,8 +223,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 className={picture}
                 src={proj.image}
                 alt={proj.title}
-                width={600}
-                height={400}
+                width={700}
+                height={700}
               />
               <div className="p-6 ">
                 <h3 className="uppercase text-gray-900 mb-5 text-sm text-center font-black">

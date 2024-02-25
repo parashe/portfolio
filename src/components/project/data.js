@@ -65,6 +65,17 @@ export const project = [
     techStack: ["React", "TypeScript", "Tailwind CSS"],
   },
   {
+    id: 9,
+    title: "Tranpiler to Convert React Native Code to React",
+    image: "/mobile.png",
+    username:"",
+    password:"",
+    desc: "This transpiler convert React Native components into React components without needing the React Native for Web library. It uses Babel to create a structure called an Abstract Syntax Tree (AST) from the code and then changes JSX syntax into code that works on the web.",
+    githubLink: "https://github.com/parashe/code-shared-app.git",
+    projectLink: "/#",
+    techStack: ["React","React Native","Transpiler","Babel", "Parcel", "AST"],
+  },
+  {
     id: 3,
     username:"",
     password:"",
