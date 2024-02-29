@@ -66,7 +66,7 @@ export const project = [
   },
   {
     id: 9,
-    title: "Tranpiler to Convert React Native Code to React",
+    title: "Transpiler to Convert React Native Code to React",
     image: "/mobile.png",
     username:"",
     password:"",
