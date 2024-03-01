@@ -19,10 +19,10 @@ export const Home = () => {
     " mt-5 text-xs  leading-relaxed lg:leading-relaxed  text-neutral-500";
   return (
     <>
-      <div className="bg-tertiary">
-        <div className="bg-gradient-animation bg-white homebackground h-screen">
+      <div className="homebackground   ">
+        <div className="bg-gradient-animation ">
           <div className="container mx-auto  ">
-            <div className="py-20 md:py-32 md:px-auto  xl:px-40 ">
+            <div className="pt-20 md:pt-28 pb-0 xl:px-40 ">
               <div className="flex items-center flex-col   md:flex-row-reverse justify-center gap-0 ">
                 <div className="w-full h-full p-5">
                   <header className=" text-center lg:text-justify flex flex-col  text-black ">
@@ -139,6 +139,27 @@ export const Home = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="mt-[-20px] overflow-hidden ">
+          <div className=" ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path
+                fill="#7E2553"
+                fillOpacity="1"
+                d="M0,224L48,234.7C96,245,192,267,288,250.7C384,235,480,181,576,165.3C672,149,768,171,864,192C960,213,1056,235,1152,234.7C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+              ></path>
+            </svg>
+          </div>
+          <div className="mt-[-1px] ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <path
+                fill="#7E2553"
+                fillOpacity="1"
+                d="M0,224L48,234.7C96,245,192,267,288,250.7C384,235,480,181,576,165.3C672,149,768,171,864,192C960,213,1056,235,1152,234.7C1248,235,1344,213,1392,202.7L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+              ></path>
+            </svg>
           </div>
         </div>
       </div>

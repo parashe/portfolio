@@ -39,7 +39,7 @@ const Navbar = () => {
 
   // Rendering the Navbar component
   return (
-    <div className="navbar fixed top-0 z-50 flex w-full flex-wrap items-center justify-center border-b shadow-sm border-neutral-200 bg-white lg:flex-row lg:justify-center lg:gap-x-10">
+    <div className="navbar overflow-hidden fixed top-0 z-50 flex w-full flex-wrap items-center justify-center border-b shadow-sm border-neutral-200 bg-white lg:flex-row lg:justify-center lg:gap-x-10">
       {/* Link to the home page with the branding logo */}
       <Link
         href="/"

@@ -54,8 +54,8 @@ const Project = () => {
           <span className="inline-block ml-1">
             <FolderIcon color="#7E2553" className="w-5 h-5" />
           </span>
-        </h2>{" "}
-        <span className=" text-center md:text-justify text-red-500 text-xs font-semibold">
+        </h2>
+        <span className="text-center md:text-justify text-red-500 text-xs font-semibold">
           Note: All projects mentioned here are personal projects. Professional
           projects are not included.
         </span>

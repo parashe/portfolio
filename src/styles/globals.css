@@ -31,7 +31,8 @@
     /* background: #f9fafb; */
     /* border-radius:  30% 70% 70% 30% / 50% 50% 70% 70%  */
     /* border-radius: 0% 0% 50% 50% / 5% 5% 50% 50%; */
-    border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+    /* border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%; */
+    background-image: url("/public/svgbackground.svg")  ;
 }
 
 
