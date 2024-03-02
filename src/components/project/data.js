@@ -1,21 +1,11 @@
 export const project = [
-  {
-    id: 1,
-    username:"",
-    password:"",
-    title: "E-commerce Website UI",
-    image: "/ecommerce-ui.png",
-    desc: "This is an  simple user interface designed for an online shopping website. This website has a user-friendly interface with a clean and modern design.",
-    githubLink: "https://github.com/exampleuser/ecommerce-website",
-    projectLink: "https://parashe.github.io/Ecommerce_UI/html/index.html",
-    techStack: ["Html", "CSS", "JavaScript"],
-  },
+  
   {
     id: 7,
     username:"",
     password:"",
     title: "E-commerce Website",
-    image: "/onlinereact.png",
+    image: "/online.png",
     desc: "This is a protype online shopping website. This website is enhanced version of first project  E-commerce website UI where the simple HTML , CSS, javascript  version of ui is converted using Next.JS, tailwind CSS, typescript. The implementation of jwt authentication, Rest API is done and backend is created using NodeJS, Express and mongodb. ",
     githubLink: "https://github.com/parashe/OnlineShop.git",
     projectLink: "https://onlineshop-frontend.vercel.app/",
@@ -63,6 +53,17 @@ export const project = [
     githubLink: "https://github.com/parashe/amazingnepal.git",
     projectLink: "https://amazingnepal.vercel.app/",
     techStack: ["React", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    id: 1,
+    username:"",
+    password:"",
+    title: "E-commerce Website UI",
+    image: "/ecommerce-ui.png",
+    desc: "This is an  simple user interface designed for an online shopping website. This website has a user-friendly interface with a clean and modern design.",
+    githubLink: "https://github.com/exampleuser/ecommerce-website",
+    projectLink: "https://parashe.github.io/Ecommerce_UI/html/index.html",
+    techStack: ["Html", "CSS", "JavaScript"],
   },
   {
     id: 9,
