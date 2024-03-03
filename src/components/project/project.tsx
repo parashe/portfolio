@@ -34,7 +34,7 @@ const Project = () => {
 
   const row = "flex flex-col justify-center gap-y-[30px] md:gap-y-[50px]";
   const picture =
-    "aspect-auto w-full  h-full  shrink-0 bg-primary rounded-lg object-cover lg:mx-12 max-h-[300px] lg:max-w-lg xl:max-w-md lg:rounded-md ";
+    "aspect-[16/9] w-full  h-full   shrink-0 bg-white rounded-lg object-contain lg:mx-12 max-h-[300px] lg:max-w-lg xl:max-w-md lg:rounded-md ";
 
   const maxImageWidth = 950;
   const maxImageHeight = 600;
@@ -65,7 +65,7 @@ const Project = () => {
               key={index}
               className={
                 row +
-                "md:flex-col xl:flex-row items-center justify-center text-justify mt-5 cursor-pointer bg-white rounded-lg shadow-md shadow-gray-100 hover:shadow-md hover:shadow-grary-200 transition duration-300 ease-in-out "
+                "md:flex-col xl:flex-row items-center justify-center text-justify mt-5 cursor-pointer bg-white rounded-lg shadow-xl shadow-gray-200 hover:shadow-md hover:shadow-grary-200 transition duration-300 ease-in-out "
               }
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: isVisible ? 0 : 100, opacity: isVisible ? 1 : 0 }}

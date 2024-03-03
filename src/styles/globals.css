@@ -31,26 +31,38 @@
     /* background: #f9fafb; */
     /* border-radius:  30% 70% 70% 30% / 50% 50% 70% 70%  */
     /* border-radius: 0% 0% 50% 50% / 5% 5% 50% 50%; */
-    /* border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%; */
-    background-image: url("/public/svgbackground.svg")  ;
+    border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+    /* background-image: url("/public/svgbackground.svg")  ; */
 }
 
 
 
 .image-home {
-    border-radius: 30% 50% 30% 40% / 50% 30% 30% 40%;
-    border-width: 10px;
-    border-style: solid;
-    border-image: linear-gradient(to right, #7E2553, #FAEF5D, #1D2B53) 1;
-    /* box-shadow: 10px 10px 20px 2px #FAEF5D; */
+    position: relative; /* Ensure the background is positioned relative to the image */
+    display: inline-block; /* Ensure the container only takes up as much space as the image */
+    border-radius: 50%; /* Create a circular shape */
+    border: 10px solid transparent;
+    border-image: linear-gradient(to right, #7E2553, #FAEF5D, #1D2B53); /* Apply a gradient border */
+    border-image-slice: 1; /* Ensure the border image is displayed correctly */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; /* Add a fancy shadow effect */
+    transform: scale(1); /* Add a slight scaling effect on hover */
+    transition: transform 0.3s ease; /* Smooth transition for scaling effect */
     cursor: pointer;
-    ;
+    overflow: hidden; /* Ensure the pseudo-elements don't overflow */
+}
 
+
+.image-home::after {
+    z-index: 1; /* Ensure this pseudo-element is in front of the image */
 }
 
 .image-home:hover {
-    box-shadow: 10px 10px 20px 2px #FAEF5D;
+    transform: scale(1.05); /* Scale up the image on hover */
 }
+
+
+
+
 
 @media screen and (max-width: 768px) {
 
@@ -166,6 +178,7 @@
 
 .skills {
     background: url(https://source.unsplash.com/E8Ufcyxz514/2400x1823) center / cover no-repeat fixed;
+   
 
 
 }

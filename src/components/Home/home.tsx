@@ -19,8 +19,10 @@ export const Home = () => {
     " mt-5 text-xs  leading-relaxed lg:leading-relaxed  text-neutral-500";
   return (
     <>
-      <div className="homebackground   ">
-        <div className="bg-gradient-animation ">
+    <div className="w-full h-full bg-gradient-to-r from-secondary via-pink-500  to-tertiary  bg-cover bg-center ">
+      <div className="homebackground  bg-cover bg-center bg-white h-screen   ">
+        {/* <div className="bg-gradient-to-r from-secondary via-pink-500  to-tertiary  bg-cover bg-center  "> */}
+        <div className="bg-gradient-animation  bg-cover bg-center  ">
           <div className="container mx-auto  ">
             <div className="pt-20 md:pt-28 pb-0 xl:px-40 ">
               <div className="flex items-center flex-col   md:flex-row-reverse justify-center gap-0 ">
@@ -142,7 +144,7 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="mt-[-20px] overflow-hidden ">
+        {/* <div className="mt-[-20px] overflow-hidden ">
           <div className=" ">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
               <path
@@ -161,7 +163,8 @@ export const Home = () => {
               ></path>
             </svg>
           </div>
-        </div>
+        </div> */}
+      </div>
       </div>
     </>
   );

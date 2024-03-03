@@ -22,6 +22,17 @@ export const project = [
     ],
   },
   {
+    id: 2,
+    title: "Travel Website",
+    image: "/amazing.png",
+    username:"",
+    password:"",
+    desc: "This  website is currently in development. This contains only the user interface and not connected with the backednd. but it is designed using dummy data so that it can be connected and data can be displayed easily from backend if connected.This is Amazing Nepal  website build using React,Typescript and Tailwind CSS. ",
+    githubLink: "https://github.com/parashe/amazingnepal.git",
+    projectLink: "https://amazingnepal.vercel.app/",
+    techStack: ["React", "TypeScript", "Tailwind CSS"],
+  },
+  {
     id: 8,
     username:"user@example.com",
     password:"User@123",
@@ -43,17 +54,7 @@ export const project = [
     ],
 
   },
-  {
-    id: 2,
-    title: "Travel Website",
-    image: "/amazing.png",
-    username:"",
-    password:"",
-    desc: "This  website is currently in development. This contains only the user interface and not connected with the backednd. but it is designed using dummy data so that it can be connected and data can be displayed easily from backend if connected.This is Amazing Nepal  website build using React,Typescript and Tailwind CSS. ",
-    githubLink: "https://github.com/parashe/amazingnepal.git",
-    projectLink: "https://amazingnepal.vercel.app/",
-    techStack: ["React", "TypeScript", "Tailwind CSS"],
-  },
+
   {
     id: 1,
     username:"",
