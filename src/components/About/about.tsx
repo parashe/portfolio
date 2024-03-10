@@ -41,7 +41,7 @@ export const About = () => {
 
   return (
     <motion.div id="about" className="container mx-auto ">
-      <section className="p-5 md:px-auto lg:px-40 lg:py-10  flex flex-col items-center justify-center">
+      <section className="p-5 lg:px-32 lg:py-10  flex flex-col items-center justify-center">
         <motion.div
           className={
             row + "flex-row-reverse md:flex-col xl:flex-row  h-[80vh] items-center justify-center text-justify"
@@ -60,7 +60,7 @@ export const About = () => {
             priority
           />
          
-          <div className={`flex flex-col about-text`}>
+          <div className={`flex flex-col about-text md:pr-16`}>
             <Title className="mx-auto lg:mx-0 uppercase text-blue-500 lg:mb-5 text-sm text-justify font-black">
               About Me
             </Title>
@@ -70,7 +70,7 @@ export const About = () => {
                 <LocationPinIcon color="#FF004D" className="w-5 h-5" />
               </span>
             </h2>
-            <p className=" mt-2 text-xs  leading-relaxed lg:leading-6  text-neutral-500">
+            <p className=" mt-2 text-xs md:text-sm  leading-relaxed lg:leading-6  text-neutral-500">
               Passionate and results-driven Full Stack Developer with a proven
               history of delivering cutting-edge web and mobile solutions.
               Proficient in{" "}
