@@ -27,7 +27,10 @@ const TechStackModal: React.FC<TechStackModalProps> = ({
   onClose,
 }) => {
   return (
-    <div onClick={onClose} className="fixed   top-0 left-0 flex justify-center items-center w-full h-full bg-black bg-opacity-50 z-50">
+    <div
+      onClick={onClose}
+      className="fixed   top-0 left-0 flex justify-center items-center w-full h-full bg-black bg-opacity-50 z-50"
+    >
       {/* </div> <div className="fixed bg-black   w-full h-full inset-0 z-50 flex items-start justify-center overflow-y-auto bg-opacity-50"> */}
       <div className="modal-content bg-white bg-opacity-90 max-h-[80vh] p-8 rounded-xl shadow-lg overflow-auto">
         <div className="flex justify-end pb-2">
@@ -85,7 +88,7 @@ export const Skills: React.FC<SkillsProps> = () => {
       const windowHeight = window.innerHeight;
       const fullHeight = document.body.clientHeight;
 
-      const adjustedScrollProgress = scrollPosition / (fullHeight / 1.5);
+      const adjustedScrollProgress = scrollPosition / (fullHeight / 1.4);
 
       const clampedScrollProgress = Math.min(
         Math.max(adjustedScrollProgress, 0),
@@ -122,7 +125,7 @@ export const Skills: React.FC<SkillsProps> = () => {
           <Title className="mx-auto lg:mx-0 uppercase text-blue-500 lg:mb-5 text-sm text-justify font-black">
             Skills
           </Title>
-          <h2 className="max-w-md text-xl text-secondary lg:text-xl font-black text-center lg:text-left">
+          <h2 className="max-w-md text-xl text-black lg:text-xl font-black text-center lg:text-left">
             Empowering Innovation Through Skillful Expertise.
             <span className="inline-block ml-1">
               <FolderIcon color="#7E2553" className="w-5 h-5" />
@@ -135,7 +138,7 @@ export const Skills: React.FC<SkillsProps> = () => {
                 className="card flex flex-col items-center justify-center  mt-5  rounded-lg shadow-md"
               >
                 <div className=" about-text lg p-10">
-                  <h3 className="uppercase text-blue-500 mb-5 text-sm text-center font-black">
+                  <h3 className="uppercase text-blue-500  text-sm text-center font-black">
                     {skill.title} Tech Stack
                   </h3>
                   <div className="w-full h-full flex flex-col items-center justify-center text-center">

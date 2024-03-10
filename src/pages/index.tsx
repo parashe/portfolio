@@ -8,6 +8,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Footer from "@/components/Footer/footer";
 import Skills from "@/components/skills/skills";
+import { ExperienceAndEducation } from "@/components/Experience/experience";
 
 const DashboardPage: NextPage = () => {
   return (
@@ -15,11 +16,16 @@ const DashboardPage: NextPage = () => {
       <Navbar />
 
       <Home />
+   
 
       <About />
-  <Skills/>
+      <ExperienceAndEducation />
+      <div className="md:pb-40 pb-20" ></div>
+      <Skills />
+
       <Project />
-      <Footer/>
+
+      <Footer />
     </>
   );
 };

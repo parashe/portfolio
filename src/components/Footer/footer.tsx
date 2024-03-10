@@ -9,6 +9,7 @@ const Footer = () => {
   const links = [
     { url: "#", text: "Home" },
     { url: "#about", text: "About" },
+    { url: "#experience", text: "Experience" },
     { url: "#skills", text: "Skills" },
     { url: "#projects", text: "Projects" },
     { url: "#", text: "Download CV" }, // Change the URL to "#" to prevent page reload

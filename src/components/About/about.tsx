@@ -15,7 +15,7 @@ export const About = () => {
       const fullHeight = document.body.clientHeight;
 
       // Calculate the adjusted scroll progress based on the content height
-      const adjustedScrollProgress = scrollPosition / (fullHeight / 4);
+      const adjustedScrollProgress = scrollPosition / (fullHeight / 5);
 
       // Clamp the scroll progress to a range between 0 and 1
       const clampedScrollProgress = Math.min(
@@ -40,11 +40,11 @@ export const About = () => {
   const maxImageHeight = 600;
 
   return (
-    <motion.div id="about" className="container mx-auto">
-      <section className="p-5 md:px-auto lg:px-40 lg:py-10 h-screen flex flex-col items-center justify-center">
+    <motion.div id="about" className="container mx-auto ">
+      <section className="p-5 md:px-auto lg:px-40 lg:py-10  flex flex-col items-center justify-center">
         <motion.div
           className={
-            row + "flex-row-reverse md:flex-col xl:flex-row items-center justify-center text-justify"
+            row + "flex-row-reverse md:flex-col xl:flex-row  h-[80vh] items-center justify-center text-justify"
           }
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: isVisible ? 0 : 100, opacity: isVisible ? 1 : 0 }}
@@ -74,17 +74,17 @@ export const About = () => {
               Passionate and results-driven Full Stack Developer with a proven
               history of delivering cutting-edge web and mobile solutions.
               Proficient in{" "}
-              <span className="text-secondary font-semibold ">
+              <span className="text-tertiary font-semibold ">
                 ReactJS, NextJS, NodeJS, Express, TypeScript, Tailwind CSS, SQL,
                 and NoSQL,{" "}
               </span>
               I excel in crafting responsive web applications that are both
               efficient and maintainable. My expertise extends to mobile app
               development using{" "}
-              <span className="text-secondary font-semibold ">React Native </span>{" "}
+              <span className="text-tertiary font-semibold ">React Native </span>{" "}
               for iOS and Android platforms. Additionally, I leverage AWS
               services like {""}
-              <span className="text-secondary font-semibold ">
+              <span className="text-tertiary font-semibold ">
                 amplify, ECS, API gateway, S3, Cognito, and Lambda{" "}
               </span>{" "}
               to enhance application performance and security.

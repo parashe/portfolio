@@ -17,7 +17,7 @@ const Project = () => {
       const fullHeight = document.body.clientHeight;
 
       const adjustedScrollProgress =
-        scrollPosition / (fullHeight + windowHeight / 2);
+        scrollPosition / (fullHeight + windowHeight / 1.1);
 
       const clampedScrollProgress = Math.min(
         Math.max(adjustedScrollProgress, 0),
@@ -65,7 +65,7 @@ const Project = () => {
               key={index}
               className={
                 row +
-                "md:flex-col xl:flex-row items-center justify-center text-justify mt-5 cursor-pointer bg-white rounded-lg shadow-xl shadow-gray-200 hover:shadow-md hover:shadow-grary-200 transition duration-300 ease-in-out "
+                "md:flex-col xl:flex-row items-center justify-center  text-justify mt-5 cursor-pointer bg-white rounded-lg shadow-xl shadow-gray-200 hover:shadow-md hover:shadow-grary-200 transition duration-300 ease-in-out "
               }
               initial={{ y: 50, opacity: 0 }}
               animate={{ y: isVisible ? 0 : 100, opacity: isVisible ? 1 : 0 }}
@@ -92,7 +92,7 @@ const Project = () => {
                 <p className="mt-3 text-xs text-justify  leading-relaxed text-neutral-500">
                   {project.desc}
                 </p>
-              
+
                 <div className="flex items-center mt-6">
                   <p className="font-bold text-xs text-secondary mr-3">
                     Tech Stack

@@ -11,6 +11,7 @@ const navItems = new Map([
   ["Home", "/"],
   ["About ", "#about"],
   ["Skills ", "#skills"],
+  ["Experience ", "#experience"],
   ["Projects ", "#projects"],
   ["RESUME ", "#resume"],
 ]);
@@ -89,11 +90,11 @@ const Navbar = () => {
             <li key={name} className="py-5">
               <Link
                 href={href}
-                className="transition-colors hover:text-primary focus:text-primary focus:outline-none"
+                className="transition-colors hover:text-tertiary focus:text-tertiary focus:outline-none"
                 onClick={handleClickLink}
               >
                 {name === "RESUME " ? ( // Check if the link is "Resume"
-                  <button onClick={toggleModal} className="cursor-pointer">
+                  <button onClick={toggleModal} className="cursor-pointer ">
                     {name}
                   </button>
                 ) : (

@@ -7,6 +7,7 @@
     animation: gradientAnimation 5s ease infinite alternate;
 }
 
+
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
@@ -172,9 +173,15 @@
 .skills {
     background: url(https://source.unsplash.com/E8Ufcyxz514/2400x1823) center / cover no-repeat fixed;
 
-
-
+background-color: #7E2553;
+background-blend-mode: overlay;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
 }
+
+
 
 .card {
 
@@ -185,3 +192,18 @@
 
     backdrop-filter: blur(15px);
 }
+.borderpoint {
+    position: relative;
+  }
+.point-marker::before {
+    content: '';
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	right: calc(100% + 14px);
+	top: 0;
+	background-color: #7E2553;
+	border: 2px solid white;
+  }
+  

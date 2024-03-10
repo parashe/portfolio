@@ -10,6 +10,7 @@ import {
   NodeIcon,
   ReactIcon,
 } from "../svg";
+import { Title } from "../atoms";
 
 export const Home = () => {
   const picture =
@@ -25,34 +26,42 @@ export const Home = () => {
           {/* <div className="bg-gradient-to-r from-secondary via-pink-500  to-tertiary  bg-cover bg-center  "> */}
           <div className="bg-gradient-animation  bg-cover bg-center  ">
             <div className="container mx-auto  ">
-              <div className="pt-20 md:pt-28 pb-0 xl:px-40 ">
+              <div className="pt-20 md:pt-40 pb-0 xl:px-40 ">
                 <div className="flex items-center flex-col   md:flex-row-reverse justify-center gap-0 ">
                   <div className="w-full h-full p-5">
                     <header className=" text-center lg:text-justify flex flex-col  text-black ">
+                      <Title className="mx-auto heading-text leading-relaxed lg:mx-0 uppercase text-black lg:mb-5 text-sm text-justify font-black">
+                        Hello , Welcome
+                      </Title>
                       <h1 className="  heading-text tracking-wide text-4xl font-black leading-relaxed mb-3  md:text-5xl ">
-                        Hi, I&apos;m{" "}
+                        I&apos;m{" "}
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary via-pink-500 to-tertiary">
                           Parash Giri{" "}
                         </span>
                       </h1>
-                      <h3 className=" heading-text  text-2xl font-black leading-relaxed">
+                      {/* <h3 className=" heading-text  text-2xl font-black leading-relaxed">
                         <span className=" text-secondary">
                           {" "}
                           Full Stack Developer
                         </span>
-                      </h3>
+                      </h3> */}
 
                       <p className={`${paragraph}  heading-text`}>
-                        I&apos;m a passionate MERN stack developer with over
-                        three years of experience. Based in Birmingham, UK,
-                        I&apos;m eager to bring your ideas to life. 
+                        A passionate{" "}
+                        <span className="text-black font-bold">
+                          {" "}
+                          Full Stack Developer
+                        </span>{" "}
+                        with over three years of experience. Based in
+                        Birmingham, UK, I&apos;m eager to bring your ideas to
+                        life.
                         {/* I specialize
                         in turning concepts into fully-functional and visually
                         appealing digital solutions. Let&apos;s work together to
                         make your ideas a reality. */}
                       </p>
 
-                      <div className="subheading-text mt-5 md:mt-8 gap-5 pb-5 flex flex-wrap">
+                      <div className="subheading-text mt-5 md:mt-8 gap-5 pb-5 flex flex-wrap justify-center md:justify-normal">
                         <div className="relative group">
                           <a
                             href="https://github.com/parashe"
@@ -197,15 +206,15 @@ export const Home = () => {
                   </div>
 
                   <div className="w-full flex text-center justify-center  image-content  p-4   ">
-                  <Image
-                    src="/parash.jpg"
-                    className={picture}
-                    alt="Profile Picture"
-                    width={605}
-                    height={700}
-                    priority
-                  />
-                </div>
+                    <Image
+                      src="/parash.jpg"
+                      className={picture}
+                      alt="Profile Picture"
+                      width={605}
+                      height={700}
+                      priority
+                    />
+                  </div>
                 </div>
               </div>
             </div>
