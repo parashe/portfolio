@@ -1,5 +1,17 @@
 export const project = [
   
+
+  {
+    id: 7,
+    username:"",
+    password:"",
+    title: "Login Page",
+    image: "/data-app.png",
+    desc: "This app is created using React, taiwlind CSS, CSS, typescript. This handles the darkmode and light mode on toggle. This has the concept of context api. ",
+    githubLink: "https://github.com/parashe/data-app.git",
+    projectLink: "https://data-app-seven.vercel.app/",
+    techStack: ["React", "TypeScript", "Tailwind CSS", "CSS", "context api"],
+  },
   {
     id: 7,
     username:"",
