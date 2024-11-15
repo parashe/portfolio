@@ -74,7 +74,7 @@ export const project = [
     title: "E-commerce Website UI",
     image: "/ecommerce-ui.png",
     desc: "This is an  simple user interface designed for an online shopping website. This website has a user-friendly interface with a clean and modern design.",
-    githubLink: "https://github.com/exampleuser/ecommerce-website",
+    githubLink: "https://github.com/parashe/Ecommerce_UI",
     projectLink: "https://parashe.github.io/Ecommerce_UI/html/index.html",
     techStack: ["Html", "CSS", "JavaScript"],
   },
