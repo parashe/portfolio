@@ -9,23 +9,39 @@ import { motion } from "framer-motion";
 import Footer from "@/components/Footer/footer";
 import Skills from "@/components/skills/skills";
 import { ExperienceAndEducation } from "@/components/Experience/experience";
+import { ThemeContextProvider } from "@/Context/ThemeContext";
 
 const DashboardPage: NextPage = () => {
+  const [theme, setTheme] = useState("light");
+
+  const darktheme = () => {
+    setTheme("dark");
+  };
+  const lighttheme = () => {
+    setTheme("light");
+  };
+
+  useEffect(() => {
+    document.querySelector("html")?.classList.remove("dark", "light");
+    document.querySelector("html")?.classList.add(theme);
+  });
+
   return (
     <>
-      <Navbar />
+      <ThemeContextProvider value={{ theme, darktheme, lighttheme }}>
+        <Navbar />
 
-      <Home />
-   
+        <Home />
 
-      <About />
-      <ExperienceAndEducation />
-      <div className="md:pb-40 pb-20" ></div>
-      <Skills />
+        <About />
+        <ExperienceAndEducation />
+        <div className="md:pb-40 pb-20"></div>
+        <Skills />
 
-      <Project />
+        <Project />
 
-      <Footer />
+        <Footer />
+      </ThemeContextProvider>
     </>
   );
 };

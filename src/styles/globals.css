@@ -171,9 +171,10 @@
 }
 
 .skills {
-    background: url(https://source.unsplash.com/E8Ufcyxz514/2400x1823) center / cover no-repeat fixed;
+    /* background-color: #ec73b2; */
+    background: url("/skill_background.jpg") center / cover no-repeat fixed;
 
-background-color: #7E2553;
+background-color: #ab1861;
 background-blend-mode: overlay;
 background-size: cover;
 background-position: center;
