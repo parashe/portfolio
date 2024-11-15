@@ -124,6 +124,17 @@ export const project = [
     techStack: ["NextJS", "Tailwind CSS", "TypeScript", "Material-UI", "CSS"],
   },
   {
+    id: 5.5,
+    username:"",
+    password:"",
+    title: "Simple chatbot",
+    image: "/chatbot.png",
+    githubLink: "https://github.com/parashe/chatbot",
+    projectLink: "https://chatbot-parash.vercel.app/",
+    desc: "This is a simple  reusable  chatbot component which is developed using ReactJs and tailwind CSS.",
+    techStack: ["ReactJS", "Tailwind CSS", "TypeScript", "CSS"],
+  },
+  {
     id: 6,
     username:"",
     password:"",
