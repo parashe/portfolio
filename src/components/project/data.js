@@ -97,7 +97,7 @@ export const project = [
     image: "/subedi.png",
     desc: "This website was built 3 years back for the educational consultancy website. An interactive and user-friendly website designed to provide comprehensive educational consultancy services. Our platform offers personalized guidance and support to students and parents seeking assistance with academic planning, career counseling, college admissions, and more. ",
     githubLink: "https://github.com/parashe/Subdei.git",
-    projectLink: "https://subedi.vercel.app/",
+    projectLink: "https://subdei.vercel.app/",
     techStack: ["React", "CSS", "Material-UI", "Font Awesome", "Bootstrap"],
   },
   {
