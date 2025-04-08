@@ -40,8 +40,9 @@ export const project = [
     username:"",
     password:"",
     desc: "This  website is currently in development. This contains only the user interface and not connected with the backednd. but it is designed using dummy data so that it can be connected and data can be displayed easily from backend if connected.This is Amazing Nepal  website build using React,Typescript and Tailwind CSS. ",
-    githubLink: "https://github.com/parashe/amazingnepal.git",
-    projectLink: "https://amazingnepal.vercel.app/",
+    // githubLink: "https://github.com/parashe/amazingnepal.git",
+    githubLink: "/",
+    projectLink: "https://www.visitamazingnepal.com/",
     techStack: ["React", "TypeScript", "Tailwind CSS"],
   },
   {
