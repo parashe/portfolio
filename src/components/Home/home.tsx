@@ -14,8 +14,7 @@ import { Title } from "../atoms";
 
 export const Home = () => {
   const picture =
-    "h-full max-h-[300px] w-[300px]  image-home  brightness-100 shadow-lg  opacity-100   w-[100%] shrink-0  bg-neutral-200 object-cover md:mx-12 md:w-[250px] lg:h-[320px] lg:w-[320px] ";
-
+  "h-full max-h-[350px] w-[350px] rounded-full brightness-100 shadow-xl opacity-100 shrink-0 bg-neutral-200 object-cover md:mx-12 md:w-[300px] lg:h-[380px] lg:w-[380px] transform hover:scale-105 transition-transform duration-500";
   const paragraph =
     " mt-5 text-sm  leading-relaxed lg:leading-relaxed  text-neutral-500";
 
@@ -205,7 +204,8 @@ export const Home = () => {
                     </header>
                   </div>
 
-                  <div className="w-full flex text-center justify-center  image-content  p-4   ">
+                  <div className="w-full flex text-center justify-center image-content p-4 relative group">
+                  <div className="relative">
                     <Image
                       src="/parash.jpg"
                       className={picture}
@@ -214,7 +214,12 @@ export const Home = () => {
                       height={700}
                       priority
                     />
+                    {/* <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-transparent via-transparent to-black opacity-20 group-hover:opacity-30 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 rounded-2xl border-4 border-transparent group-hover:border-white/30 transition-all duration-500"></div>
+                 */}
                   </div>
+                </div>
+            
                 </div>
               </div>
             </div>

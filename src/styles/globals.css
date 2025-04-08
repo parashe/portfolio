@@ -39,7 +39,7 @@
 .image-home {
     position: relative;
     display: inline-block;
-    border-radius: 50%;
+    border-radius: 100%;
     border: 10px solid transparent;
     border-image: linear-gradient(to right, #7E2553, #FAEF5D, #1D2B53);
     border-image-slice: 1;

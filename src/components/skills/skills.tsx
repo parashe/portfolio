@@ -138,7 +138,7 @@ export const Skills: React.FC<SkillsProps> = () => {
                 className="card flex flex-col items-center justify-center  mt-5  rounded-lg shadow-md"
               >
                 <div className=" about-text lg p-10">
-                  <h3 className="uppercase text-blue-500  text-sm text-center font-black">
+                  <h3 className="uppercase text-black  text-sm text-center font-black">
                     {skill.title} Tech Stack
                   </h3>
                   <div className="w-full h-full flex flex-col items-center justify-center text-center">
