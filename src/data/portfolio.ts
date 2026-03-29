@@ -189,7 +189,7 @@ export const EXPERIENCE_CARDS: ExperienceCard[] = [
     subtitle: "Fibonacci Engineering & IT Solutions, Nepal",
     period: "Sep 2020 — Dec 2022",
     description:
-      "Developed full-stack applications including Office Management System and Building Permit System for Nepali clients using React, Node.js, Express and MongoDB.",
+      "Developed full-stack applications including Office Management System, Building Permit System, and an accounting and inventory management platform for Nepali clients using React, Node.js, Express, MongoDB and MySQL.",
     stack: ["React", "Node.js", "Express", "MongoDB", "MySQL"],
     accent: "default",
   },
@@ -338,17 +338,16 @@ export const WEB_APPLICATIONS: WebAppProject[] = [
     privateLabel: "🔒 Private",
   },
   {
-    id: "auth",
-    emoji: "🔐",
-    gradient: "linear-gradient(135deg,#0d1a2e,#0a2540)",
-    label: "AUTH / UI",
-    badge: "Open Source",
-    title: "Auth UI — Data App",
+    id: "ledger",
+    emoji: "📊",
+    gradient: "linear-gradient(135deg,#122018,#1a3028)",
+    label: "ACCOUNTING / STOCK",
+    badge: "Nepal · Private",
+    title: "Accounting & Inventory Management System",
     description:
-      "Polished authentication interface with dark/light mode toggle using React, TypeScript, Tailwind and Context API.",
-    tech: ["React", "TypeScript", "Tailwind"],
-    liveUrl: "https://data-app-seven.vercel.app/",
-    githubUrl: "https://github.com/parashe/data-app.git",
+      "Integrated platform for Nepali clients — chart of accounts, billing, stock levels, purchase and sales orders, valuations, and operational reporting with role-based access.",
+    tech: ["React", "Node.js", "Express", "MySQL"],
+    privateLabel: "🔒 Private",
   },
 ];
 
@@ -371,13 +370,13 @@ const G = [
 export const PERSONAL_PROJECTS: WebAppProject[] = [
   {
     id: "p-login",
-    emoji: "🔑",
+    emoji: "🔐",
     gradient: G[5],
     label: "AUTH / UI",
     badge: "Personal",
-    title: "Login Page",
+    title: "Auth UI — Data App",
     description:
-      "React, Tailwind CSS, and TypeScript with dark/light mode toggle and Context API.",
+      "Polished authentication interface with dark/light mode toggle using React, TypeScript, Tailwind and Context API.",
     tech: ["React", "TypeScript", "Tailwind CSS", "Context API"],
     githubUrl: "https://github.com/parashe/data-app.git",
     liveUrl: "https://data-app-seven.vercel.app/",
@@ -537,11 +536,11 @@ export const CLIENT_WEBSITES: ClientWebsite[] = [
     id: "desi",
     emoji: "🌶️",
     name: "Desi Junction",
-    urlLabel: "desijunction",
+    urlLabel: "desi-junction-website.vercel.app",
     description:
       "South Asian restaurant site built with Next.js — menu showcase, online ordering integration, gallery and reservation flows.",
     tech: "Next.js",
-    visitText: "Built",
+    visitUrl: "https://desi-junction-website.vercel.app/",
   },
   {
     id: "faraday",
